@@ -54,10 +54,9 @@ body.soft-light{ filter:brightness(.94) saturate(.82) contrast(.95); }
 body.reduce-motion *{ animation-duration:.001s !important; animation-iteration-count:1 !important; transition-duration:.05s !important; }
 .wrap{max-width:1100px;margin:0 auto;}
 
-.techbar{display:flex;justify-content:space-between;align-items:center;gap:10px;
+.techbar{display:flex;justify-content:flex-end;align-items:center;gap:10px;
   font-family:var(--font-mono);font-size:var(--fs-xs);letter-spacing:1.5px;color:var(--ink-soft);
   border-bottom:1.5px solid var(--ink);padding-bottom:8px;margin-bottom:18px;text-transform:uppercase;flex-wrap:wrap;}
-.techbar .dot{display:inline-block;width:7px;height:7px;background:var(--violet);margin-right:7px;border-radius:50%;vertical-align:middle;}
 .a11y-btn{border:1.5px solid var(--ink);background:var(--paper);cursor:pointer;font-size:var(--fs-xl);
   width:32px;height:32px;border-radius:8px;display:grid;place-items:center;}
 .a11y-btn:hover{background:var(--violet-light);}
@@ -417,7 +416,6 @@ header.top{display:flex;align-items:flex-end;gap:14px;margin-bottom:18px;flex-wr
 .child-mini-btn:hover{background:var(--cream);}
 .a11y-close.cp-secondary{background:var(--paper);color:var(--ink);margin-top:0;margin-bottom:8px;}
 
-footer.foot{margin-top:22px;border-top:1.5px solid var(--ink);padding-top:8px;font-family:var(--font-mono);font-size:var(--fs-2xs);letter-spacing:2px;color:var(--ink-soft);text-align:center;text-transform:uppercase;}
 
 @media (prefers-reduced-motion:reduce){.float,.pop,.gem-pulse,.arm-l,.arm-r{animation:none;}}
 @media(max-width:560px){.stats{grid-template-columns:auto 1fr;gap:10px;}.streak{grid-column:1/-1;flex-direction:row;gap:6px;justify-content:center;}}
@@ -427,7 +425,6 @@ footer.foot{margin-top:22px;border-top:1.5px solid var(--ink);padding-top:8px;fo
 <body>
 <div class="wrap">
   <div class="techbar">
-    <span><span class="dot"></span>Lummi · Golem de Cristal · PCGS</span>
     <button class="a11y-btn" id="a11yOpen" title="Accesibilidad" aria-label="Abrir opciones de accesibilidad">⚙️</button>
   </div>
 
@@ -596,7 +593,6 @@ footer.foot{margin-top:22px;border-top:1.5px solid var(--ink);padding-top:8px;fo
         <button class="tbtn" id="setPinBtn">🔒 PIN de adulto</button>
       </div>
       <div class="tools"><button class="tbtn" id="childrenBtn">🧑‍🧑‍🧒 Perfiles</button><button class="tbtn" id="childProfileBtn">👪 Perfil del niño</button><button class="tbtn" id="adultReportBtn">📊 Progreso por mundo</button></div>
-      <p class="note">Lummi se mueve solo por su hábitat y reacciona si lo tocas. Los cinco juegos alimentan su núcleo de cristal. Aprendizaje por vínculo, nunca por castigo.</p>
 
       <div class="break-nudge" id="breakNudge">
         <div class="bn-emoji">🌤️</div>
@@ -606,7 +602,6 @@ footer.foot{margin-top:22px;border-top:1.5px solid var(--ink);padding-top:8px;fo
     </section>
   </div>
 
-  <footer class="foot">CADA FACETA DECLARADA · NINGUNA CURVA OCULTA — LUMMI MMXXVI</footer>
 </div>
 
 <div class="certificate-sheet" id="certificate">
